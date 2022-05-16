@@ -1,286 +1,161 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>zhangblog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>zhangblog</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
 <meta property="og:title" content="zhangblog">
 <meta property="og:url" content="https://leidingzhang.github.io/index.html">
 <meta property="og:site_name" content="zhangblog">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://leidingzhang.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'zhangblog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-05-16 18:28:08'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="zhangblog" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.2.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">zhangblog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://leidingzhang.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-docker" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/05/16/docker/" class="article-date">
-  <time class="dt-published" datetime="2022-05-16T01:51:29.000Z" itemprop="datePublished">2022-05-16</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/05/16/docker/">docker</a>
-    </h1>
-  
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">zhangblog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">zhangblog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/05/16/docker/" title="docker"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="docker"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/16/docker/" title="docker">docker</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-05-16T01:51:29.000Z" title="Created 2022-05-16 09:51:29">2022-05-16</time></span></div><div class="content">docker镜像使用1.docker安装windows版本linux版本2.docker使用（1）目前用的方法：​	搜索镜像：docker search  # 在docker index中搜索image
+​	拉取基础镜像(从镜像库拉取）：docker pull [OPTIONS] NAME[:TAG] 
+​		docker pull tensorflow&#x2F;tensorflow:1.15.4-gpu-py3	
+​	定位到需要创建镜像的文件，根据dockerfile创建镜像：docker build [OPTIONS] PATH | URL
+​		docker build -t resnet50:v1 .
+123-f,--file &lt;path&gt;：指定要使用的Dockerfile路径 -t,--tag &lt;list&gt;：镜像名字及标签，通常为 name:tag 或者 name 格式-q,--quiet：安静模式，成功后只输出镜像 ID
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="docker镜像使用"><a href="#docker镜像使用" class="headerlink" title="docker镜像使用"></a>docker镜像使用</h1><h2 id="1-docker安装"><a href="#1-docker安装" class="headerlink" title="1.docker安装"></a>1.docker安装</h2><h3 id="windows版本"><a href="#windows版本" class="headerlink" title="windows版本"></a>windows版本</h3><h3 id="linux版本"><a href="#linux版本" class="headerlink" title="linux版本"></a>linux版本</h3><h2 id="2-docker使用"><a href="#2-docker使用" class="headerlink" title="2.docker使用"></a>2.docker使用</h2><h3 id="（1）目前用的方法："><a href="#（1）目前用的方法：" class="headerlink" title="（1）目前用的方法："></a>（1）目前用的方法：</h3><p>​	<strong>搜索镜像</strong>：docker search <image> <em># 在docker index中搜索image</em></p>
-<p>​	<strong>拉取基础镜像</strong>(从镜像库拉取）：docker pull [OPTIONS] NAME[:TAG] </p>
-<p>​		docker pull tensorflow&#x2F;tensorflow:1.15.4-gpu-py3	</p>
-<p>​	定位到需要创建镜像的文件，<strong>根据dockerfile创建镜像</strong>：docker build [OPTIONS] PATH | URL</p>
-<p>​		docker build -t resnet50:v1 .</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-f,--file &lt;path&gt;：指定要使用的Dockerfile路径 </span><br><span class="line">-t,--tag &lt;<span class="built_in">list</span>&gt;：镜像名字及标签，通常为 name:tag 或者 name 格式</span><br><span class="line">-q,--quiet：安静模式，成功后只输出镜像 ID</span><br></pre></td></tr></table></figure>
+​	创建容器并启动：docker run [OPTIONS] IMAGE [COMMAND] [ARG…] 
+​		docke ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/05/16/hello-world/" title="Hello World"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/16/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-05-16T01:31:56.388Z" title="Created 2022-05-16 09:31:56">2022-05-16</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
-<p>​	<strong>创建容器并启动</strong>：docker run [OPTIONS] IMAGE [COMMAND] [ARG…] </p>
-<p>​		docker run -it -p 8080:8080 resnet50:v1</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">-d：后台运行容器，并返回容器ID</span><br><span class="line">-i：以交互模式运行容器，通常与-t同时使用</span><br><span class="line">-t：为容器重新分配一个伪输入终端</span><br><span class="line">-p：指定端口映射，格式为：<span class="string">&quot;主机端口:容器端口&quot;</span></span><br><span class="line">-P：随机端口映射，容器内部端口随机映射到主机的端口</span><br><span class="line">-v，--volume：指定卷的映射，格式为：<span class="string">&quot;主机卷:容器卷&quot;</span></span><br><span class="line">--name=<span class="string">&quot;new name&quot;</span>：为容器指定一个名称</span><br><span class="line">--dns <span class="number">8.8</span><span class="number">.8</span><span class="number">.8</span>：指定容器使用的DNS服务器，默认和宿主一致</span><br></pre></td></tr></table></figure>
+More info: Writing
+Run server1$ hexo server
 
-<p><strong>显示本地镜像</strong>：docker images</p>
-<p><strong>显示本地容器</strong>：docker ps [OPTIONS]  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">-a：显示所有的容器，包括未运行的</span><br><span class="line">-f：根据条件过滤显示的内容</span><br><span class="line">-l：显示最近创建的容器</span><br><span class="line">-n：列出最近创建的n个容器</span><br><span class="line">-q：静默模式，只显示容器ID</span><br><span class="line">-s：显示总的文件大小</span><br><span class="line">--no-trunc：不截断，输出容器详细信息</span><br></pre></td></tr></table></figure>
+More info: Server
+Generate static files1$ hexo generate
 
-<p><strong>打包镜像</strong>：docker save [OPTIONS] IMAGE [IMAGE…]</p>
-<p>​	docker save skfhfkshff -o &#x2F;home&#x2F;zhang&#x2F;test.tar</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-o,--output &lt;atchive&gt;：将镜像打包为tar包</span><br></pre></td></tr></table></figure>
+More info: Generating
+Deploy to remote sites1$ hexo deploy
 
-<p><strong>删除镜像</strong>： docker rmi 镜像ID</p>
-<p><strong>删除容器</strong>:  docker rm 容器ID</p>
-<h2 id="3-dockerfile创建"><a href="#3-dockerfile创建" class="headerlink" title="3.dockerfile创建"></a>3.dockerfile创建</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">FROM [--platform=&lt;platform&gt;] &lt;image&gt;[:&lt;tag&gt;]</span><br><span class="line"></span><br><span class="line">设置镜像使用的基础镜像</span><br><span class="line"></span><br><span class="line">RUN &lt;command&gt;（shell格式）</span><br><span class="line">RUN [<span class="string">&quot;executable&quot;</span>, <span class="string">&quot;param1&quot;</span>, <span class="string">&quot;param2&quot;</span>]（<span class="built_in">exec</span>格式，推荐使用）</span><br><span class="line">设置镜像构建 (docker build) 时运行的命令</span><br><span class="line"></span><br><span class="line">CMD &lt;command&gt;（shell格式）</span><br><span class="line">CMD [<span class="string">&quot;executable&quot;</span>,<span class="string">&quot;param1&quot;</span>,<span class="string">&quot;param2&quot;</span>]（<span class="built_in">exec</span>格式，推荐使用）</span><br><span class="line">CMD [<span class="string">&quot;param1&quot;</span>,<span class="string">&quot;param2&quot;</span>]（为ENTRYPOINT指令提供参数）</span><br><span class="line">设置容器启动 (docker run) 时运行的命令，如果存在多个CMD指令，仅最后一个生效</span><br><span class="line"></span><br><span class="line">ENTRYPOINT [<span class="string">&quot;&lt;executeable&gt;&quot;</span>,<span class="string">&quot;&lt;param1&gt;&quot;</span>,<span class="string">&quot;&lt;param2&gt;&quot;</span>,...]</span><br><span class="line">设置容器启动 (docker run) 时运行的命令，如果存在多个ENTRYPOINT指令，仅最后一个生效</span><br><span class="line"></span><br><span class="line">LABEL &lt;key&gt;=&lt;value&gt;[ = …]</span><br><span class="line">将元数据添加到镜像中</span><br><span class="line"></span><br><span class="line">MAINTAINER &lt;author&gt;</span><br><span class="line">设置镜像作者</span><br><span class="line"></span><br><span class="line">ENV &lt;key&gt; &lt;value&gt;</span><br><span class="line">ENV &lt;key1&gt;=&lt;value1&gt; [&lt;key2&gt;=&lt;value2&gt;…]</span><br><span class="line">设置环境变量</span><br><span class="line"></span><br><span class="line">USER &lt;user&gt;[:&lt;group&gt;]</span><br><span class="line">USER &lt;UID&gt;[:&lt;GID&gt;]</span><br><span class="line">在它之后的RUN、CMD以及ENTRYPOINT指令都会以设置的USER身份执行</span><br><span class="line"></span><br><span class="line">EXPOESE &lt;port1&gt;[/&lt;protocol1&gt;] [&lt;port2&gt;[/&lt;protocol2&gt;]…]</span><br><span class="line">指定容器监听的端口</span><br><span class="line"></span><br><span class="line">COPY [–chown=&lt;user&gt;:&lt;group&gt;] <span class="string">&quot;&lt;src1&gt;&quot;</span>,... <span class="string">&quot;&lt;dest&gt;&quot;</span></span><br><span class="line">COPY [–chown=&lt;user&gt;:&lt;group&gt;] &lt;src1&gt;... &lt;dest&gt;</span><br><span class="line">从上下文路径复制文件到容器里指定路径，支持通配符表达式，–chown为可选参数，改变复制到容器内文件的拥有者和属组</span><br><span class="line"></span><br><span class="line">ADD [–chown=&lt;user&gt;:&lt;group&gt;] <span class="string">&quot;&lt;src1&gt;&quot;</span>,... <span class="string">&quot;&lt;dest&gt;&quot;</span></span><br><span class="line">ADD [–chown=&lt;user&gt;:&lt;group&gt;] &lt;src1&gt;... &lt;dest&gt;</span><br><span class="line">与COPY使用格式一致，官方推荐使用COPY</span><br><span class="line"></span><br><span class="line">VOLUME &lt;path&gt;</span><br><span class="line">VOLUME [<span class="string">&quot;&lt;path1&gt;&quot;</span>, <span class="string">&quot;&lt;path2&gt;&quot;</span>...]</span><br><span class="line">定义匿名数据卷，在启动容器时如果忘记挂载数据卷，会自动挂载到匿名卷</span><br><span class="line"></span><br><span class="line">WORKDIR &lt;<span class="built_in">dir</span>&gt;</span><br><span class="line">指定工作目录，会在构建镜像的每一层中都存在</span><br><span class="line"></span><br><span class="line">ARG &lt;name&gt;[=&lt;default value&gt;]</span><br><span class="line">构建参数，与ENV作用一至，不过作用域仅对Dockerfile内有效，构建好的镜像内不存在此环境变量</span><br></pre></td></tr></table></figure>
-
-<p>目前已用dockerfile例子：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">From tensorflow/tensorflow:<span class="number">1.15</span><span class="number">.4</span>-gpu-py3</span><br><span class="line"><span class="comment"># 配置华为云的源，安装 python、python3-pip 和 Flask</span></span><br><span class="line"></span><br><span class="line">ADD . /app</span><br><span class="line">WORKDIR /app</span><br><span class="line"></span><br><span class="line">RUN echo <span class="string">&quot;export LANG=C.UTF-8&quot;</span> &gt;&gt;/etc/profile \</span><br><span class="line">&amp;&amp; mkdir -p /.script \</span><br><span class="line">&amp;&amp; cp /etc/apt/sources.<span class="built_in">list</span> /etc/apt/sources.<span class="built_in">list</span>.bak \</span><br><span class="line">&amp;&amp; echo <span class="string">&quot;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse\n\</span></span><br><span class="line"><span class="string">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse\n\</span></span><br><span class="line"><span class="string">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse\n\</span></span><br><span class="line"><span class="string">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse&quot;</span> &gt;/etc/apt/sources.<span class="built_in">list</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#RUN apt-get update --fix-missing &amp;&amp; apt-get install -y ffmpeg</span></span><br><span class="line"> </span><br><span class="line">RUN pip3 install  --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple  Flask</span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple flasgger</span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple pyyaml==<span class="number">5.4</span><span class="number">.1</span></span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple pillow==<span class="number">8.3</span><span class="number">.1</span></span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple numpy==<span class="number">1.18</span><span class="number">.5</span></span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple opencv-python-headless</span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple matplotlib==<span class="number">3.3</span><span class="number">.4</span></span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple scikit-image==<span class="number">0.17</span><span class="number">.2</span></span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple onnx==<span class="number">1.10</span><span class="number">.1</span></span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple onnxruntime-gpu==<span class="number">1.9</span><span class="number">.0</span></span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple rsa</span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple cython</span><br><span class="line">RUN pip3 install --trusted-host https://repo.huaweicloud.com -i https://repo.huaweicloud.com/repository/pypi/simple insightface==<span class="number">0.6</span></span><br><span class="line"><span class="comment">#RUN apt-get install -y libsm6</span></span><br><span class="line"><span class="comment">#RUN apt-get install -y libxrender1</span></span><br><span class="line"><span class="comment">#RUN apt-get install -y libxext-dev</span></span><br><span class="line"><span class="comment"># 拷贝应用服务代码进镜像里面</span></span><br><span class="line"><span class="comment">#COPY test_app.py /opt/test_app.py</span></span><br><span class="line"><span class="comment">#COPY ./web.sh /usr/bin/web.sh</span></span><br><span class="line"><span class="comment"># 指定镜像的启动命令</span></span><br><span class="line"><span class="comment">#CMD python3  /opt/test_app.py</span></span><br><span class="line"><span class="comment">#RUN chmod +x /usr/bin/web.sh</span></span><br><span class="line"><span class="comment">#CMD [&quot;python&quot; , &quot;app.py&quot;]</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="4-docker方法流程"><a href="#4-docker方法流程" class="headerlink" title="4.docker方法流程"></a>4.docker方法流程</h2><p>（1）本地镜像打包到镜像仓库方法</p>
-<p>​	登录镜像：docker login [OPTIONS] [SERVER]</p>
-<p>​	提交镜像到本地：docker commit</p>
-<p>​	修改待上传镜像tag:</p>
-<p>​	上传镜像：docker push [OPTIONS] NAME[:TAG]</p>
-<p>​	eg:</p>
-<p>​	参考链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/xinaml/article/details/77573644?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1-77573644-blog-120884660.pc_relevant_default&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~default-1-77573644-blog-120884660.pc_relevant_default&amp;utm_relevant_index=1">https://blog.csdn.net/xinaml/article/details/77573644?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-77573644-blog-120884660.pc_relevant_default&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-77573644-blog-120884660.pc_relevant_default&amp;utm_relevant_index=1</a></p>
-<p>（2）创建ubuntu容器并配置容器环境方法</p>
-<p>​	流程:拉取基础镜像——创建容器——容器保存为本地镜像——上传镜像到仓库（下次直接拉取使用？）</p>
-<p>​	</p>
-<p>​	</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://leidingzhang.github.io/2022/05/16/docker/" data-id="cl38j4uc40000dg829u2cdr8a" data-title="docker" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/05/16/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-05-16T01:31:56.388Z" itemprop="datePublished">2022-05-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/05/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://leidingzhang.github.io/2022/05/16/hello-world/" data-id="cl38j4ucc0001dg821dx6hdlj" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/05/16/docker/">docker</a>
-          </li>
-        
-          <li>
-            <a href="/2022/05/16/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/16/docker/" title="docker"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="docker"/></a><div class="content"><a class="title" href="/2022/05/16/docker/" title="docker">docker</a><time datetime="2022-05-16T01:51:29.000Z" title="Created 2022-05-16 09:51:29">2022-05-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/16/hello-world/" title="Hello World"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/05/16/hello-world/" title="Hello World">Hello World</a><time datetime="2022-05-16T01:31:56.388Z" title="Created 2022-05-16 09:31:56">2022-05-16</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">May 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">2</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-05-16T10:28:08.948Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
