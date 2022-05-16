@@ -1,0 +1,2 @@
+# leidingzhang.github.io
+hexo
