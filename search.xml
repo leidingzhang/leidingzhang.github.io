@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>pycharm远程连接服务器</title>
+      <link href="/2022/05/18/pycharm%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <url>/2022/05/18/pycharm%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<p>记录Pycharm如何远程连接服务器，供以后参考。</p><h2 id="安装pycharm"><a href="#安装pycharm" class="headerlink" title="安装pycharm"></a>安装pycharm</h2><p>​Pycharm需要安装专业版，具体安装流程网络中参考较多。</p><h2 id="Pycharm远程连接服务器"><a href="#Pycharm远程连接服务器" class="headerlink" title="Pycharm远程连接服务器"></a>Pycharm远程连接服务器</h2><p>Pycharm专业版有连接服务器功能，方便把程序上传到服务器中运行，对需要进行深度学习训练模型的用户很友好。</p><ul><li>首先打开所需在服务器运行的project，点击标题栏”Tools—-Deployment—-Configuration…”。<img src="https://zhangwqimage.oss-cn-shanghai.aliyuncs.com/img/20210611134929846.png" alt="在这里插入图片描述"></li><li>在弹出的界面中配置服务器端口信息，Type选择SFTP。<img src="https://zhangwqimage.oss-cn-shanghai.aliyuncs.com/img/20210611135235555.png" alt="在这里插入图片描述"></li><li>配置完成端口信息后不要退出，选择Mappings继续进行配置，此部分是为了建立本地路径和上传项目的路径映射，也就是上传到服务器的位置（个人理解），配置后点击OK结束。<br><img src="https://zhangwqimage.oss-cn-shanghai.aliyuncs.com/img/20210611140240690.png" alt="在这里插入图片描述"></li><li>配置好服务器连接后，再配置服务器中对应的Interpreter。和平时设置Interpreter类似，在Settings的Project Interpreter中点击add。<br><img src="https://zhangwqimage.oss-cn-shanghai.aliyuncs.com/img/20210611150249631.png" alt="在这里插入图片描述"></li><li>跳转后的界面选择SSH Interpreter中的Existing serverconfiguration。按照上述配置好服务器端口连接后，应该可以直接选择已经连接的服务器，然后点击Next。<br><img src="https://zhangwqimage.oss-cn-shanghai.aliyuncs.com/img/20210611150846110.png" alt="在这里插入图片描述"></li><li>点击Next后跳出配置界面，此处需要配置Interpreter和Sync folders。其中Interpreter选择自己当前工程在服务器中需要使用的pyhon解释器。Sync folders配置在服务器中对应的项目路径（与连接服务器时配置的项目路径相同，自己每次都是两个都设置。）<br><img src="https://zhangwqimage.oss-cn-shanghai.aliyuncs.com/img/20210611151626582.png" alt="在这里插入图片描述"><br>设置Sync folders路径。<br><img src="https://zhangwqimage.oss-cn-shanghai.aliyuncs.com/img/20210611151735223.png" alt="在这里插入图片描述"></li><li>最后点击finish，完成设置。设置完成后就会将本地的项目内容上传到服务器中所设置的路径文件内。此时点击Pycharm标题栏中“Tools—-Deployment”可以看到原本灰色不可选的选项变成了可选状态。其中“Upload to XXX”是整个项目上传服务器，“Upload to…”可以上传当前修改的单个文件。“Download from”同理可以下载服务器中项目到本地。推荐搭配一些连接服务器的软件使用。<br><img src="https://zhangwqimage.oss-cn-shanghai.aliyuncs.com/img/20210611152611633.png" alt="在这里插入图片描述"></li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Pycharm进行python开发是很好的生产力组合，再搭配服务器使用，基本满足了大部分的开发需求。目前只是总结开发过程中常用工具的使用，当做备忘，同时也希望给有需要的人当做补充。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 基础技能 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Sqlite3使用教程</title>
       <link href="/2022/05/17/Sqlite3%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
       <url>/2022/05/17/Sqlite3%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
